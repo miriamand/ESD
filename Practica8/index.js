@@ -161,7 +161,7 @@ class DoubleLinkedList {
             valueToReturn;
         }
 
-        return null;
+        return current.dato;
 
     }
 
