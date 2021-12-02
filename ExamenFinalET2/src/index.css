@@ -1,0 +1,137 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+ }
+a{
+    text-decoration: none;
+    color: white;
+}
+body {
+    font-family: 'Permanent Marker', cursive;
+    background-image: url("/assets/Tower\ of\ barbs.jpg");
+    background-size: cover;
+    background-repeat: none;
+     }
+
+#header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 100vh;
+    background-image: url("/assets/pattern.jpg");
+    border: 10px solid;
+    border-image: url("/assets/902paterns.jpeg") 30 round;
+        }
+
+#header ul{
+    color: white;
+    text-align: center;
+    height: auto;
+    background: linear-gradient(135deg, rgb(255, 3, 171) 0%, rgb(0, 255, 242) 100%);
+    padding: 15px;
+}
+#header ul:hover{
+    background: linear-gradient(135deg, rgb(31, 223, 56) 0%, rgb(0, 255, 242) 100%);
+}
+.selects{
+   border: 1px black solid;
+   color: black;
+   width: 100%;
+   text-align: center;
+   background-color: white;
+}
+#uncle{
+    top: 60%;
+    left: 14%;
+    width: 300px;
+    position: absolute;
+    transform: rotate(75deg);
+    animation: uncles 3s infinite;
+    user-select: none;
+}
+/* Estilos */
+.display-style{
+    width: auto;
+    margin: 0px;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(135deg, rgba(255, 3, 171, 0.5) 0%, rgb(0, 255, 242, 0.5) 100%);
+}
+.display-style2{
+   display:flex;
+   flex-direction: column;
+   justify-content:space-between;
+}
+.button{
+    background: linear-gradient(135deg, rgb(255, 3, 171) 0%, rgb(0, 255, 242) 100%);
+    width: 100%;
+    height: 30px;
+    color: white;
+    margin-top: 5%;
+    cursor: pointer;
+}
+.nav_link{
+    user-select: none;
+}
+input{
+    text-align: center;
+}
+table{
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    border-spacing: 20px;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    background-color: rgb(0, 0, 0);
+    width: auto;
+    height: auto;
+}
+
+/* Displays de cada cuadro de las operaciones */ 
+#display1{
+    display: none;
+}
+#display2{
+    display: none;
+}
+#display3{
+    display: none;
+}
+#display4{
+    display: none;
+}
+#display5{
+    display: none;
+}
+#display6{
+    display: none;
+}
+
+
+.down-arrow{
+    fill:currentColor;
+    max-width: 20px; height: auto;
+    margin-left: auto;
+}
+.display_{
+    display: none;
+}
+@keyframes uncles {
+    0%{transform: rotate(75deg);}
+    10%{transform: rotate(72.5deg);}
+    20%{transform: rotate(75deg);}
+    30%{transform: rotate(70deg);}
+    40%{transform: rotate(75deg);}
+    50%{transform: rotate(72.5deg);}
+    60%{transform: rotate(75deg);}
+    70%{transform: rotate(70deg);}
+    80%{transform: rotate(75deg);}
+    90%{transform: rotate(72.5deg);}
+    100%{transform: rotate(75deg)}
+   }

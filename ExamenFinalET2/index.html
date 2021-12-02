@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/index.css">
+    <link rel="icon" href="/assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins&display=swap" rel="stylesheet">
+    <title>ExamenFinal</title>
+</head>
+<body>
+    <div>
+        <table id="stack_table">
+        </table>
+
+        <table id="queue_table">
+        </table>
+
+        <table id="le_table">
+        </table>
+
+        <table id="lde_table">
+        </table>
+
+        <table id="lec_table">
+        </table>
+
+        <table id="lcde_table">
+        </table>
+
+    </div>
+
+    <a href="https://store.steampowered.com/app/794600/LET_IT_DIE/" target="_blank"><img src="/assets/uncle-death.png" id="uncle"></a>
+    <nav id="header"> 
+            
+   <ul> 
+       <li>
+    <div id="stack_display" class="display">
+    <a href="#" class="nav_link"> Pila </a>
+    </div>
+    
+    <div id="display1" class="display-style display_">
+        <div class="display-style2" id="display1.1">
+     <input type="number" id="input_stack">
+     <select id="options_stack" class="selects">
+     <option>push</option>
+     <option>pop</option>
+     <option>peek</option>
+     <option>size</option>
+     </select>
+    </div>
+      <button class="button" id="button_stack"></button>
+    </div>
+       </li>
+</ul>
+  <ul>
+    <li>
+        <div id="queue_display" class="display">
+        <a href="#" class="nav_link"> Cola </a>
+        </div>
+        
+        <div id="display2" class="display-style display_">
+            <div class="display-style2">
+         <input type="number" id="input_queue">
+         <select id="options_queue" class="selects">
+         <option>enqueue</option>
+         <option>dequeue</option>
+         <option>peek</option>
+         <option>size</option>
+         <option>isEmpty</option>
+         </select>
+        </div>
+          <button class="button" id="button_queue"></button>
+        </div>
+           </li>
+  </ul>
+  <ul>
+    <li>
+        <div id="le_display" class="display">
+        <a href="#" class="nav_link"> ListaEnlazada </a>
+        </div>
+        
+        <div id="display3" class="display-style display_">
+            <div class="display-style2">
+         <input type="number" id="input_le">
+         <input type="number" id="input_le2">
+         <select id="options_LE" class="selects">
+         <option>insert first</option>
+         <option>insert last</option>
+         <option>insert at</option>
+         <option>remove first</option>
+         <option>remove last</option>
+         <option>remove data</option>
+         <option>remove list</option>
+         <option>remove from</option>
+         <option>isEmpty</option>
+         <option>get size</option>
+         </select>
+        </div>
+          <button class="button" id="button_LE"></button>
+        </div>
+           </li>
+  </ul>
+  <ul>
+    <li>
+        <div id="lde_display" class="display">
+        <a href="#" class="nav_link"> ListaDE </a>
+        </div>
+        
+        <div id="display4" class="display-style display_">
+            <div class="display-style2">
+         <input type="number" id="input_lde">
+         <input type="number" id="input_lde2">
+         <select id="options_LDE" class="selects">
+         <option>insert first</option>
+         <option>insert last</option>
+         <option>insert at</option>
+         <option>remove first</option>
+         <option>remove last</option>
+         <option>remove data</option>
+         <option>remove list</option>
+         <option>remove from</option>
+         <option>reverse print</option>
+         <option>get size</option>
+         <option>is empty</option>
+         </select>
+        </div>
+          <button class="button" id="button_LDE"></button>
+        </div>
+           </li>
+  </ul>
+  <ul>
+    <li>
+        <div id="lec_display" class="display">
+        <a href="#" class="nav_link"> ListaEC </a>
+        </div>
+        
+        <div id="display5" class="display-style display_">
+            <div class="display-style2">
+         <input type="number" id="input_lec">
+         <input type="number" id="input_lec2">
+         <select id="options_LEC" class="selects">
+         <option>insert first</option>
+         <option>insert last</option>
+         <option>insert at</option>
+         <option>remove first</option>
+         <option>remove last</option>
+         <option>remove data</option>
+         <option>remove from</option>
+         <option>remove list</option>
+         <option>get size</option>
+         <option>get last</option>
+         <option>get first</option>
+         <option>is empty</option>
+         </select>
+        </div>
+          <button class="button" id="button_LEC"></button>
+        </div>
+           </li>
+  </ul>
+  <ul>
+    <li>
+        <div id="lcde_display" class="display">
+        <a href="#" class="nav_link"> ListaCDE </a>
+        </div>
+        
+        <div id="display6" class="display-style display_">
+            <div class="display-style2">
+         <input type="number" id="input_lcde">
+         <input type="number" id="input_lcde2">
+         <select id="options_LCDE" class="selects">
+         <option>insert first</option>
+         <option>insert last</option>
+         <option>insert at</option>
+         <option>remove first</option>
+         <option>remove last</option>
+         <option>remove data</option>
+         <option>remove from</option>
+         <option>remove list</option>
+         <option>reverse print</option>
+         <option>is empty</option>
+         <option>get size</option>
+         </select>
+        </div>
+          <button class="button" id="button_LCDE"></button>
+        </div>
+           </li>
+  </ul>
+</nav>
+</body>
+<script type="module" src="index.js"></script>
+</html>
