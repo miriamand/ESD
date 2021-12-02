@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrapslate.min.css">
+    <title>Examen CRUD</title>
+</head>
+<body>
+    <header style="text-align: center;">
+        <h1>
+            CRUD
+        </h1>
+    </header>
+    <div class="container mt-4" style="text-align: center;">
+        <form class="form-group">
+            <h5>Agregar Alumno</h5>
+            <h6>Nota: Antes de editar rellene el formulario con los datos deseados</h6>
+            <label class="col-form-label mt-1" for="Matricula">Matricula:</label>
+            <input type="number" class="form-control" placeholder="Matricula" id="Matricula">
+            <label class="col-form-label mt-1" for="Nombre">Nombre:</label>
+            <input type="text" class="form-control" placeholder="Nombre" id="Nombre">
+            <label class="col-form-label mt-1" for="Materia">Materia:</label>
+            <input type="text" class="form-control" placeholder="Materia" id="Materia">
+            <label class="col-form-label mt-1" for="Calificacion">Calificacion:</label>
+            <input type="number" class="form-control" placeholder="Calificacion" id="Calificacion">
+            <br>
+            <button id="btnAdd" type="button" class="btn btn-primary">Añadir</button>
+            <button id="btnEdi" type="button" class="btn btn-secondary">Editar</button>
+        </form>
+    </div>
+    <div class="container mt-2">
+        <label class="col-form-label col-form-label-sm mt-4" for="Busqueda">Busqueda</label>
+        <input class="form-control form-control-sm" type="text" placeholder="Matricula a Buscar" id="Busqueda" style="width: 200px;">
+        <button id="btnFin" type="button" class="btn btn-info btn-sm">Buscar</button>
+        <button id="btnSho" type="button" class="btn btn-success btn-sm">Mostrar Todo</button>
+    </div>
+    <div class="container mt-2">
+        <span><h3 style="text-align: center;">Alumnos</h3></span>
+        <table class="table table-dark">
+            <thead>
+                <th>Matricula</th>
+                <th>Nombre</th>
+                <th>Materia</th>
+                <th>Calificacion</th>
+            </thead>
+            <tbody id="Table">
+
+            </tbody>
+        </table>
+    </div>
+    <div class="container mt-2">
+        <label class="col-form-label col-form-label-sm mt-4" for="Borrar">Borrar</label>
+        <input class="form-control form-control-sm" type="text" placeholder="Matricula a Borrar" id="Borrar" style="width: 200px;">
+        <button id="btnDel" type="button" class="btn btn-danger btn-sm">Borrar</button>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
